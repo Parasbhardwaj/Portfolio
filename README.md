@@ -28,5 +28,27 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Deployment
 
-## Github Pages
+To deploy your Angular portfolio on GitHub Pages, you can follow these steps:
+
+### 1. **Prepare Your Angular Project for Deployment**
+   - Open your Angular project.
+   - Run the following command to build the project:
+     ```bash
+     ng build --prod --output-path docs --base-href /your-repo-name/
+     ```
+     - `--output-path docs`: This builds your project into a folder named `docs`, which is required by GitHub Pages.
+     - `--base-href /your-repo-name/`: Replace `your-repo-name` with the name of your GitHub repository.
+
+### 2. **Configure GitHub Pages**
+   - Push your project to GitHub.
+   - Go to your repository on GitHub.
+   - Click on the **Settings** tab.
+   - Scroll down to the **Pages** section.
+   - In the **Source** dropdown, select the `main` branch and the `/docs` folder.
+   - Click **Save**.
+
+### 3. **Access Your Deployed Portfolio**
+   - After a few minutes, your portfolio should be available at `https://your-username.github.io/your-repo-name/`.
+
+This will make your Angular portfolio live on GitHub Pages. Let me know if you need further assistance!
 
